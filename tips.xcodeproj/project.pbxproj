@@ -13,6 +13,7 @@
 		93705ED11AD78285009720E7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93705ED01AD78285009720E7 /* Images.xcassets */; };
 		93705ED41AD78285009720E7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93705ED21AD78285009720E7 /* LaunchScreen.xib */; };
 		93705EE01AD78286009720E7 /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93705EDF1AD78286009720E7 /* tipsTests.swift */; };
+		93705EEB1AD7A808009720E7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93705EEA1AD7A808009720E7 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		93705ED91AD78286009720E7 /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93705EDE1AD78286009720E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93705EDF1AD78286009720E7 /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		93705EEA1AD7A808009720E7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		93705EC61AD78284009720E7 /* tips */ = {
 			isa = PBXGroup;
 			children = (
+				93705EE91AD7A76D009720E7 /* View Controllers */,
 				93705EC91AD78285009720E7 /* AppDelegate.swift */,
 				93705ECB1AD78285009720E7 /* ViewController.swift */,
 				93705ECD1AD78285009720E7 /* Main.storyboard */,
@@ -110,6 +113,14 @@
 				93705EDE1AD78286009720E7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93705EE91AD7A76D009720E7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93705EEA1AD7A808009720E7 /* SettingsViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +225,7 @@
 			files = (
 				93705ECC1AD78285009720E7 /* ViewController.swift in Sources */,
 				93705ECA1AD78285009720E7 /* AppDelegate.swift in Sources */,
+				93705EEB1AD7A808009720E7 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,8 +353,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -351,8 +365,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
